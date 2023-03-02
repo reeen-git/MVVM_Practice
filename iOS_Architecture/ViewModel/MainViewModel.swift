@@ -15,4 +15,15 @@ class MainViewModel {
     func numberOfRows(in section: Int) -> Int {
         10
     }
+    
+    func getData() {
+        APICaller.getTrandingMovies { result in
+            switch result {
+            case .success(let data):
+                print("success: \(data.results.count)")
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }

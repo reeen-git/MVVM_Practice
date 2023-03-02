@@ -27,6 +27,10 @@ class MainViewController: UIViewController {
         setupViews()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        viewModel.getData()
+    }
+    
     func setupViews() {
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
