@@ -17,6 +17,7 @@
 		4B3EA23629B0D5D00014B7B8 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EA23529B0D5D00014B7B8 /* NetworkConstant.swift */; };
 		4B3EA23829B0D7260014B7B8 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EA23729B0D7260014B7B8 /* APICaller.swift */; };
 		4B3EA23A29B0D7780014B7B8 /* TrandingMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EA23929B0D7780014B7B8 /* TrandingMoviesModel.swift */; };
+		4B3EA23C29B23A330014B7B8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EA23B29B23A330014B7B8 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		4B3EA23529B0D5D00014B7B8 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		4B3EA23729B0D7260014B7B8 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		4B3EA23929B0D7780014B7B8 /* TrandingMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrandingMoviesModel.swift; sourceTree = "<group>"; };
+		4B3EA23B29B23A330014B7B8 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		4B3EA22B29B0CE2F0014B7B8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B3EA23B29B23A330014B7B8 /* Observable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3EA23C29B23A330014B7B8 /* Observable.swift in Sources */,
 				4B3EA23A29B0D7780014B7B8 /* TrandingMoviesModel.swift in Sources */,
 				4B3EA21029AFA4150014B7B8 /* AppDelegate.swift in Sources */,
 				4B3EA23829B0D7260014B7B8 /* APICaller.swift in Sources */,
