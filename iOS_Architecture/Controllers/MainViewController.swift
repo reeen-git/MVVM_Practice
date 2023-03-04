@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .clear
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(MovieCell.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
     
@@ -26,8 +26,7 @@ class MainViewController: UIViewController {
     }()
     
     private var viewModel = MainViewModel()
-    private var cellDataSource: [Movie] = []
-    
+    private var cellDataSource: [MovieCellViewModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,6 +81,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             self.tableView.reloadData()
         }
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         viewModel.numberOfSections()
     }
@@ -91,10 +91,14 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let movieData = cellDataSource[indexPath.row]
-        cell.textLabel?.text = viewModel.getMovieTitle(movieData)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? MovieCell else { return UITableViewCell() }
+        let cellViewModel = cellDataSource[indexPath.row]
+        cell.setupCell(cellViewModel)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        150
     }
     
     
