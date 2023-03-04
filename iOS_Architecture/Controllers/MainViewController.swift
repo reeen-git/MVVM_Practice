@@ -14,6 +14,7 @@ class MainViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .clear
+        tableView.separatorStyle = .none
         tableView.register(MovieCell.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
@@ -94,6 +95,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? MovieCell else { return UITableViewCell() }
         let cellViewModel = cellDataSource[indexPath.row]
         cell.setupCell(cellViewModel)
+        cell.selectionStyle = .none
         return cell
     }
     

@@ -10,7 +10,6 @@ import SnapKit
 import SDWebImage
 
 class MovieCell: UITableViewCell {
-        
     private lazy var entireView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [movieImageView, rhsStackView])
         stackView.axis = .horizontal
@@ -18,7 +17,8 @@ class MovieCell: UITableViewCell {
         stackView.layer.borderWidth = 1
         stackView.layer.cornerRadius = 10
         stackView.isLayoutMarginsRelativeArrangement = true
-        stackView.layoutMargins = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+        stackView.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        stackView.backgroundColor = .lightGray
         return stackView
     }()
     
@@ -70,12 +70,14 @@ class MovieCell: UITableViewCell {
         addSubview(entireView)
         
         entireView.snp.makeConstraints { make in
-            make.width.equalToSuperview()
+            make.top.equalToSuperview().offset(10)
+            make.left.equalToSuperview().offset(10)
+            make.right.equalToSuperview().offset(-10)
             make.centerX.equalToSuperview()
         }
         
         movieImageView.snp.makeConstraints { make in
-            make.size.equalTo(CGSize(width: 130, height: 100))
+            make.size.equalTo(CGSize(width: 130, height: 110))
         }
     }
     
