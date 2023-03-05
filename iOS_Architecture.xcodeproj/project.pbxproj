@@ -21,6 +21,8 @@
 		4B3EA23E29B3817E0014B7B8 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EA23D29B3817E0014B7B8 /* MovieCell.swift */; };
 		4B3EA24229B3872C0014B7B8 /* MovieCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EA24129B3872C0014B7B8 /* MovieCellViewModel.swift */; };
 		4B3EA24529B389E40014B7B8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3EA24429B389E40014B7B8 /* SDWebImageSwiftUI */; };
+		4B3EA24729B4C81B0014B7B8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EA24629B4C81B0014B7B8 /* DetailViewController.swift */; };
+		4B3EA24929B4CA1D0014B7B8 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EA24829B4CA1D0014B7B8 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		4B3EA23B29B23A330014B7B8 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		4B3EA23D29B3817E0014B7B8 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		4B3EA24129B3872C0014B7B8 /* MovieCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellViewModel.swift; sourceTree = "<group>"; };
+		4B3EA24629B4C81B0014B7B8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4B3EA24829B4CA1D0014B7B8 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,6 @@
 				4B3EA22C29B0CE3D0014B7B8 /* Controllers */,
 				4B3EA22929B0CDEF0014B7B8 /* View */,
 				4B3EA22A29B0CE120014B7B8 /* ViewModel */,
-				4B3EA22E29B0CE930014B7B8 /* Extensions */,
 				4B3EA22D29B0CE7C0014B7B8 /* Resources */,
 			);
 			path = iOS_Architecture;
@@ -109,6 +112,7 @@
 			children = (
 				4B3EA23329B0D1370014B7B8 /* MainViewModel.swift */,
 				4B3EA24129B3872C0014B7B8 /* MovieCellViewModel.swift */,
+				4B3EA24829B4CA1D0014B7B8 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -126,6 +130,7 @@
 			children = (
 				4B3EA22329B0C96B0014B7B8 /* MainViewController.swift */,
 				4B3EA21A29AFA4170014B7B8 /* LaunchScreen.storyboard */,
+				4B3EA24629B4C81B0014B7B8 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -136,13 +141,6 @@
 				4B3EA21829AFA4170014B7B8 /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		4B3EA22E29B0CE930014B7B8 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4B3EA22F29B0CEB50014B7B8 /* Networking */ = {
@@ -235,8 +233,10 @@
 				4B3EA23C29B23A330014B7B8 /* Observable.swift in Sources */,
 				4B3EA23A29B0D7780014B7B8 /* TrandingMoviesModel.swift in Sources */,
 				4B3EA21029AFA4150014B7B8 /* AppDelegate.swift in Sources */,
+				4B3EA24929B4CA1D0014B7B8 /* DetailViewModel.swift in Sources */,
 				4B3EA24229B3872C0014B7B8 /* MovieCellViewModel.swift in Sources */,
 				4B3EA23E29B3817E0014B7B8 /* MovieCell.swift in Sources */,
+				4B3EA24729B4C81B0014B7B8 /* DetailViewController.swift in Sources */,
 				4B3EA23829B0D7260014B7B8 /* APICaller.swift in Sources */,
 				4B3EA22429B0C96B0014B7B8 /* MainViewController.swift in Sources */,
 				4B3EA22629B0CBD50014B7B8 /* SceneDelegate.swift in Sources */,
