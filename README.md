@@ -25,5 +25,5 @@ MVCとは？
 違い
 - MVVMのViewはMVCにおけるControllerも含む→View + ViewController
 - MVVMのViewは状態を持たない
-- ViewModelとModelが直接全てのやり取りをするのではなく、Modelが変更通知機能をもち、通知によって更新をViewModekに伝える→Viewの変更する部分のみをViewModelが更新する
+- ViewModelとModelが直接全てのやり取りをするのではなく、Modelが変更通知機能をもち、通知によって更新をViewModekに伝える  →Viewの変更する部分のみをViewModelが更新する
 
