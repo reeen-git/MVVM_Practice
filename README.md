@@ -18,12 +18,6 @@ _______________
 ②動作の動きが見えずらい
 ________________
 ### MVCとの違い 
-MVCとは？
-- Model→データ構造、request
-- View→UI
-- Controller→View,Modelの制御
-  
-違い
 - MVVMのViewはMVCにおけるControllerも含む→View + ViewController
 - MVVMのViewは状態を持たない
 - ViewModelとModelが直接全てのやり取りをするのではなく、Modelが変更通知機能をもち、通知によって更新をViewModekに伝える  →Viewの変更する部分のみをViewModelが更新する
