@@ -1,5 +1,6 @@
 ## MVVMを理解するためのリポジトリ
 ### MVVMとは？
+(Model-View-ViewModel)
 - Model→ドメインを担う  
   = Viewの描写について知る必要はない→Viewの装飾についての情報を持っていてもok
   (ViewとViewModelの責務以外全て)
